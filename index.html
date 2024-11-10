@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Builder</h1>
+    <form id="resume-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter Full Name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" placeholder="Enter Email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" placeholder="Enter Phone Number" required>
+
+      <label for="skills">Skills (comma separated):</label>
+      <input type="text" id="skills" placeholder="Enter Skills" required>
+
+      <label for="experience">Work Experience:</label>
+      <textarea id="experience" placeholder="Enter Work Experience"></textarea>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resume-output" class="resume-output" style="display: none;">
+      <h2>Your Resume</h2>
+      <p><strong>Name:</strong> <span id="output-name"></span></p>
+      <p><strong>Email:</strong> <span id="output-email"></span></p>
+      <p><strong>Phone:</strong> <span id="output-phone"></span></p>
+      <p><strong>Skills:</strong> <span id="output-skills"></span></p>
+      <p><strong>Experience:</strong> <span id="output-experience"></span></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
